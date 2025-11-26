@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF.03-08-25.06-SG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 800px;
+            margin: 20px;
+        }
+
+        header, footer, aside, main, section, p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            height: 80px;
+            border: 2px solid black;
+        }
+        
+        footer {
+            height: 80px;
+            border: 2px solid black;
+            border-top: none;
+        }
+
+        #content-wrapper {
+            height: 480px;
+            border: NONE;
+        }
+        
+
+
+        aside {
+            float: left;
+            width: 30%;
+            height: 100%;
+        }
+        
+        main {
+            float: left;
+            width: 70%;
+            height: 100%;
+        }
+
+        aside p, main p {
+            display: block;
+            width: 100%;
+        }
+        
+        .etykieta {
+            height: 40px;
+            border: 1px solid black;
+        }
+        
+        .blok-tresci {
+            height: 146.66px; 
+            border: 1px solid black;
+        }
+
+        aside .etykieta, aside .blok-tresci {
+            border: 1px solid black;
+        }
+        
+        main .etykieta, main .blok-tresci {
+            border: 1px solid black;
+        }
+
+        .ostatni-blok {
+            border-bottom: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        Blok nagłówkowy
+    </header>
+
+    <section id="content-wrapper">
+        
+        <aside>
+            <p class="etykieta">Blok nawigacyjny</p>
+            
+            <p class="blok-tresci">Blok 1</p>
+            <p class="blok-tresci">Blok 2</p>
+            <p class="blok-tresci ostatni-blok">Blok 3</p>
+        </aside>
+
+        <main>
+            <p class="etykieta">Blok główny</p>
+            
+            <p class="blok-tresci">Sekcja 1</p>
+            <p class="blok-tresci">Sekcja 2</p>
+            <p class="blok-tresci ostatni-blok">Sekcja 3</p>
+        </main>
+        
+    </section>
+
+    <footer>
+        Blok stopki
+    </footer>
+       <div>
+        <br><br>
+        Wzór:
+        <br>
+        <img src="08.png">
+    </div>
+
+</body>
+</html>
